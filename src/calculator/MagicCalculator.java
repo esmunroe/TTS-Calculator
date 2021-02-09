@@ -20,10 +20,10 @@ public class MagicCalculator extends Calculator{
     }
 
     public double factorial(double num){
-        double fact = 0;
-        for (int i = 0; i < num; i++){
-            fact = fact * i;
+        if (num == 0){
+            return 1;
+        } else {
+            return (num * factorial(num - 1));
         }
-        return fact;
     }
 }
