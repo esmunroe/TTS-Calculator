@@ -1,23 +1,29 @@
 package calculator;
 
+import java.lang.Math;
+
 public class MagicCalculator extends Calculator{
-    public int squareRoot(int num){
-
+    public double squareRoot(double num){
+        return Math.sqrt(num);
     }
 
-    public int sin(int num){
-
+    public double sin(double num){
+        return Math.sin(num);
     }
 
-    public int cosine(int num) {
-
+    public double cosine(double num) {
+        return Math.cos(num);
     }
 
-    public int tangent(int num){
-
+    public double tangent(double num){
+        return Math.tan(num);
     }
 
-    public int factorial(int num){
-
+    public double factorial(double num){
+        double fact = 0;
+        for (int i = 0; i < num; i++){
+            fact = fact * i;
+        }
+        return fact;
     }
 }
