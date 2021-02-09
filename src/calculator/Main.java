@@ -4,9 +4,9 @@ public class Main {
     public static void main(String[] args) {
         MagicCalculator calc = new MagicCalculator();
 
-        final int firstNum = 1;
+        final int firstNum = 8;
         final int secondNum = 2;
-        final int magicNum = 5;
+        final int magicNum = 4;
 
         System.out.printf("Using '1' and '2' as values for the basic calculator...\nAdd: %d\nSubtract: %d\nMultiply: %d\nDivide: %d\n",
                 calc.add(firstNum, secondNum), calc.subtract(firstNum, secondNum), calc.multiply(firstNum, secondNum), calc.divide(firstNum, secondNum));
